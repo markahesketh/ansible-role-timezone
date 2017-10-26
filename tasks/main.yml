@@ -1,0 +1,22 @@
+---
+- name: Ensure tzdata and ntp are installed
+  apt:
+    pkg: "{{ item }}"
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
+  with_items:
+    - tzdata
+    - ntp
+
+- name: Check if firewall rules have changed
+  template:
+    src: "timezone.j2"
+    dest: "/etc/timezone"
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  notify:
+    - Reconfigure tzdata
+    - Restart cron
