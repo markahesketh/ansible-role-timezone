@@ -1,13 +1,10 @@
 ---
 - name: Ensure tzdata and ntp are installed
   apt:
-    pkg: "{{ item }}"
+    pkg: ['tzdata', 'ntp']
     state: present
     update_cache: yes
     cache_valid_time: 3600
-  with_items:
-    - tzdata
-    - ntp
 
 - name: Check if firewall rules have changed
   template:
