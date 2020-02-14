@@ -6,5 +6,4 @@
   service:
     name: cron
     state: restarted
-  register: unused_disable
-  failed_when: "unused_disable | failed and 'find' not in unused_disable.msg and 'found' not in unused_disable.msg"
+  when: "'cron.service' in services"

@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/markahesketh/ansible-role-timezone.svg?branch=master)](https://travis-ci.org/markahesketh/ansible-role-timezone)
 
-Ansible role to manage timezones.
+Ansible role to manage timezones on Debian/Ubuntu systems.
 
 ## Installation
 
@@ -46,9 +46,5 @@ This role is open-sourced software licensed under the [MIT license](http://opens
 
 ## Author
 
-By [Mark Hesketh](https://www.markhesketh.co.uk/), a web developer from Manchester, UK.
 
-* Blog: [markhesketh.co.uk](https://www.markhesketh.co.uk/)
-* Twitter: [twitter.com/markahesketh](https://www.twitter.com/markahesketh/)
-* GitHub: [github.com/markahesketh](http://www.github.com/heskethm/)
-* Email: [contact@markhesketh.co.uk](mailto:contact@markhesketh.co.uk)
+By [Mark Hesketh](https://www.markhesketh.co.uk/), a web developer from Manchester, UK.
