@@ -6,4 +6,3 @@
   service:
     name: cron
     state: restarted
-  when: "'cron.service' in services"
